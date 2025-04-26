@@ -1,0 +1,17 @@
+// Fonts
+$font-arial: 'Arial', sans-serif;
+$font-playfair: 'Playfair Display';
+// Fonts end
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}

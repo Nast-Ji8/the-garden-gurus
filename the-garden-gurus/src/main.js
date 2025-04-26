@@ -1,10 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-// import '@/assets/css/style.css'
+// import '@/assets/css/style.css' // Этот файл использовался как референс при создании SCSS стилей
 import '@/assets/scss/style.scss'
 import components from '@/components/UI'
 
+// Импорт и настройка Font Awesome
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { fas } from '@fortawesome/free-solid-svg-icons'
